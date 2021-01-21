@@ -25,7 +25,7 @@ body {
     margin: 0;
 }
 header {
-    height: 700px;
+    min-height: 700px;
     background-image: url('../img/bg1.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,6 +41,9 @@ header {
 .first {
     display: flex;
     justify-content: space-between;
+}
+.menuact{
+    display: none;
 }
 .nav ol {
     list-style-type: none;
@@ -74,6 +77,21 @@ header {
     margin-bottom: 0;
 }
 .number .phone {    
+    font-family: 'Roboto';
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+.numbers p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 0;
+}
+.numbers .phone {    
     font-family: 'Roboto';
     font-size: 19px;
     font-weight: 700;
@@ -150,7 +168,7 @@ header {
     border: none;
 }
 .advantages {
-    height: 600px;
+    min-height: 600px;
     background-color: #f3f3f3;
     padding: 55px 0;
     text-align: center;
@@ -644,4 +662,163 @@ footer {
 .forfloat {
     clear: both;
 
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        padding-bottom: 40px;
+    }
+    .container {
+        width: 993px;
+        border: 2px solid green;
+    }
+    .nav ol li a {
+        font-size: 12px;
+    }
+    .jobcontent{
+        width: 100%;
+    }
+    .jobdescr{
+        width: 33%;
+    }
+    .jobdescr img{
+        width: 100%;
+    }
+    .jobdescr p{
+        width: 100%;
+    }
+
+}
+@media (max-width: 993px) {
+    .container{ 
+        width: 963px;
+    }
+    .nav ol li {
+        padding-left: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .container{ 
+        width: 720px;
+    }
+    .nav ol  {
+        padding-left: 0px;
+        
+    }
+    .nav ol li {
+        padding-right: 3px;
+        
+    }
+    .number {
+        display: none;
+    }
+    .heading h1 {
+        font-size: 16px;
+    }
+    .heading .big  {
+        font-size: 40px;
+    }
+    .heading .huge  {
+        font-size: 30px;
+    }
+    .answer .answer__block{
+        width: 90%;
+        height: 430px;
+    }
+    .answer .answer_header{
+        width: 100%;
+    }
+    #answform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+    #answform textarea {
+        width: 90%;
+    }
+    #answform input {
+        margin-bottom: 7px;
+    }
+    .footer_logo {
+        width: 500px;
+    }
+    .footer_logo p {
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 576px){
+    .container {
+        width: 540px;
+    }
+    .menuact {
+        display: inline-block;
+    }
+    .nav {
+        display: none;
+    }
+    #inactive {
+        display: flex;
+        flex-direction: column;
+    }
+    .hr {
+        width:100%;
+    }
+    .wraper{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .advicons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .jobcontent {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jobdescr {
+        width: 90%;
+    }
+    .pricechecks{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .pricecheck {
+        width: 90%;
+    }
+    #consform {
+        align-items: center;
+        flex-direction: column;
+    }
+    #consform input {
+        margin: 10px 0px 5px 120px;
+        
+    }
+    .between {
+        flex-wrap: wrap;
+    }
+    .center {
+        flex-wrap: wrap;
+    }
+    .betweenicon{
+        width: 90%;
+    }
+    .footer_logo {
+        float: none;
+    }
+    .footer_quest {
+       float: none;
+        margin: 0 auto;
+    }
+    
+    .recall {
+        margin: 0 auto;
+    }
 }
